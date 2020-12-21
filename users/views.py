@@ -12,6 +12,7 @@ class PageListView(ListView):
 class DetailPageView(DetailView):
     model = User
     template_name = "detail.html"
+    context_object_name = "post"
 
 
 

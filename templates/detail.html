@@ -5,8 +5,9 @@
     </head>
 
     <body>
-        {{ post.username }}
-        {{ post.summary }}
-        {{ post.image  }}
+        <h1>Detalhes</h1>
+            <p>{{ post.summary }}</p>
+            <p><img width=300 src="{{ post.image.url }}"></p>
+            <br>
     </body>
 </html>
