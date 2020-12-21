@@ -1,0 +1,13 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Pagina Principal</title>
+    </head>
+
+    <body>
+        {% for post in object_list %}
+            <a href="detail/{{ post.slug }}">{{ post.username  }}</a>
+        {% endfor %}
+    </body>
+
+</html>
