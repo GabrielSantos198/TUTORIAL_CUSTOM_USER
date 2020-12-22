@@ -6,8 +6,14 @@
 
     <body>
         <h1>Detalhes</h1>
+            <p>{{ post.username }}</p>
             <p>{{ post.summary }}</p>
-            <p><img width=300 src="{{ post.image.url }}"></p>
+
+            {% if post.image %}
+                <p><img width=300 src="{{ post.image.url }}"></p>
+            {% endif %}
+
             <br>
+            <a href="{% url 'edit' post.slug %}">Editar</a>
     </body>
 </html>
