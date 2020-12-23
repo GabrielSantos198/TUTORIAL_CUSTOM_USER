@@ -7,7 +7,7 @@
 
     <body>
         <h2>Editar</h2>
-        <form method="post">
+        <form enctype="multipart/form-data" method="post">
             {% csrf_token %}
             {{ form|crispy }}
             <input class="btn btn-success" type="submit" value="salvar">
